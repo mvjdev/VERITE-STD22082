@@ -11,7 +11,7 @@ public final class Faux extends Expression {
 
     @Override
     public Boolean evalue(Map<String, Boolean> contexte) {
-        Boolean valeur = contexte.getOrDefault(valeurFaux,null);
-        return valeur != null && !valeur;
+        Boolean valeur = contexte.getOrDefault(valeurFaux, false);
+        return valeur;
     }
 }
