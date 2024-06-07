@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class FauxTest {
     @Test
@@ -13,6 +13,6 @@ class FauxTest {
         Map<String, Boolean> contexte = new HashMap<>();
         contexte.put("Lou est pauvre", false);
         Boolean resultat = faux.evalue(contexte);
-        assertTrue(resultat);
+        assertFalse(resultat);
     }
 }
