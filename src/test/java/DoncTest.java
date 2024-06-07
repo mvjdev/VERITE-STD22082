@@ -32,8 +32,8 @@ class DoncTest {
         Donc donc = new Donc(louEstBeau,louEstPauvre);
 
         Map<String,Boolean> contexte = new HashMap<>();
-        contexte.put("Lou est beau",false);
         contexte.put("Lou est pauvre",false);
+        contexte.put("Lou est généreux",false);
 
         Boolean resultat = donc.evalue(contexte);
         assertTrue(resultat);
