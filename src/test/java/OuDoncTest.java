@@ -11,10 +11,10 @@ class OuDoncTest {
     @Test
     void lou_est_beau_ou_lou_est_genereux_donc_lou_est_pauvre(){
         Variable louEstBeau = new Variable("Lou est beau");
-        Variable louEstGenerous = new Variable("Lou est généreux");
+        Variable louEstGenereux = new Variable("Lou est généreux");
         Variable louEstPauvre = new Variable("Lou est pauvre");
 
-        Ou ou = new Ou(louEstBeau, louEstGenerous);
+        Ou ou = new Ou(louEstBeau, louEstGenereux);
         Donc donc = new Donc(ou, louEstPauvre);
 
         Map<String, Boolean> contexte = new HashMap<>();
