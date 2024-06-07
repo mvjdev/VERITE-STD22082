@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class EtTest {
     @Test
@@ -16,10 +16,10 @@ class EtTest {
         Et et = new Et(louEstPauvre, louEstGenereux);
 
         Map<String,Boolean> contexte = new HashMap<>();
-        contexte.put("Lou est pauvre",true);
-        contexte.put("Lou est genereux",true);
+        contexte.put("Lou est pauvre",false);
+        contexte.put("Lou est genereux",false);
 
         Boolean resultat = et.evalue(contexte);
-        assertTrue(resultat);
+        assertFalse(resultat);
     }
 }
